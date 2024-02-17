@@ -8,7 +8,7 @@ import baseUrl from './helper';
 export class AdminserviceService {
  
   
-  apiUrl:string=''
+  apiUrl:string='http://localhost:8080/'
   
   
 
@@ -22,7 +22,7 @@ export class AdminserviceService {
  }
   addTraining(data: any) {
 
-    return this.http.post(this.apiUrl,this.apiUrl)
+    return this.http.post(this.apiUrl+'training/register-training',this.apiUrl)
    }
    
   getTrainings() {

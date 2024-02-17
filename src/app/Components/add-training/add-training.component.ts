@@ -22,7 +22,8 @@ export class AddTrainingComponent implements OnInit{
     this.trainingForm = this.fb.group({
       name: ['', Validators.required],
       description: ['', Validators.required],
-      gradeEligibility: ['', Validators.required]
+      grades: ['', Validators.required],
+      projects:['',Validators.required]
     });
   }
 
